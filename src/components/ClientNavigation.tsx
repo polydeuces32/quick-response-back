@@ -40,7 +40,6 @@ export default function ClientNavigation() {
     { href: '/explorer', label: 'Explorer' },
     { href: '/search', label: 'Responses' },
     { href: '/physics', label: 'Physics' },
-    { href: '/resources', label: 'Readings' },
     { href: '/favorites', label: 'Favorites' },
   ];
 

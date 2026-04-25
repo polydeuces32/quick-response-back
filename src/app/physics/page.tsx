@@ -13,17 +13,15 @@ export default function PhysicsPlayground() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Convert elite words to our Word format
     const convertedWords: Word[] = eliteWords.map((word, index) => ({
-      id: index + 1000, // Start from 1000 to avoid conflicts
+      id: index + 1000,
       term: word.term,
       definition: word.definition,
       example: word.example,
       tone: word.tone,
-      createdAt: new Date()
+      createdAt: new Date(),
     }));
-
-    setPhysicsWords(convertedWords.slice(0, 20)); // Use first 20 for physics
+    setPhysicsWords(convertedWords.slice(0, 20));
     setIsLoading(false);
   }, []);
 

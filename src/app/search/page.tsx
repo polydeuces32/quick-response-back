@@ -1,7 +1,6 @@
 'use client';
 
-import { useState } from 'react';
-import words from '@/data/words.json';
+import { useState, useEffect } from 'react';
 import { eliteWordToWord } from '@/data/elite-words';
 import { buildBasicResponses } from '@/lib/respond-to-message';
 import { SuggestedResponse, Word } from '@/types/word';
@@ -14,18 +13,48 @@ export default function Search() {
   const [suggestedResponses, setSuggestedResponses] = useState<SuggestedResponse[]>([]);
   const [isGenerating, setIsGenerating] = useState(false);
   const [responseMode, setResponseMode] = useState<'basic' | 'elite'>('elite');
+  const [wordPool, setWordPool] = useState<Word[]>([]);
+  const [wordsLoading, setWordsLoading] = useState(true);
+  const [wordsError, setWordsError] = useState<string | null>(null);
+
+  useEffect(() => {
+    let cancelled = false;
+    const load = async () => {
+      try {
+        const res = await fetch('/api/words?lexicon=main');
+        if (!res.ok) throw new Error('Failed to load dictionary');
+        const data: Word[] = await res.json();
+        if (!cancelled) {
+          setWordPool(
+            data.map((w) => ({
+              ...w,
+              createdAt: w.createdAt instanceof Date ? w.createdAt : new Date(String(w.createdAt)),
+            }))
+          );
+          setWordsError(null);
+        }
+      } catch {
+        if (!cancelled) {
+          setWordsError('Could not load words from the database. Run db push and seed (see README).');
+          setWordPool([]);
+        }
+      } finally {
+        if (!cancelled) setWordsLoading(false);
+      }
+    };
+    void load();
+    return () => {
+      cancelled = true;
+    };
+  }, []);
 
   const generateResponses = () => {
-    if (!inputMessage.trim()) return;
+    if (!inputMessage.trim() || wordPool.length === 0) return;
 
     setIsGenerating(true);
-    
+
     setTimeout(() => {
-      const pool = (words as unknown as Word[]).map((w) => ({
-        ...w,
-        createdAt: w.createdAt instanceof Date ? w.createdAt : new Date(String(w.createdAt)),
-      }));
-      setSuggestedResponses(buildBasicResponses(inputMessage, pool));
+      setSuggestedResponses(buildBasicResponses(inputMessage, wordPool));
       setIsGenerating(false);
     }, 1500);
   };
@@ -132,6 +161,14 @@ export default function Search() {
                   placeholder="Paste the message you want to respond to here..."
                   className="w-full h-32 px-6 py-4 border-2 border-gray-200 dark:border-gray-600 bg-white dark:bg-slate-900 text-black dark:text-white focus:ring-2 focus:ring-red-600 focus:border-transparent resize-none text-lg"
                 />
+                {wordsError && (
+                  <p className="mt-2 text-sm text-red-600 dark:text-red-400">{wordsError}</p>
+                )}
+                {!wordsLoading && !wordsError && (
+                  <p className="mt-2 text-xs text-gray-500 dark:text-gray-400 uppercase tracking-wide">
+                    {wordPool.length} words in SQLite (main lexicon)
+                  </p>
+                )}
               </div>
               
               <div className="flex justify-between items-center">
@@ -140,7 +177,7 @@ export default function Search() {
                 </div>
                 <button
                   onClick={generateResponses}
-                  disabled={!inputMessage.trim() || isGenerating}
+                  disabled={!inputMessage.trim() || isGenerating || wordsLoading || wordPool.length === 0}
                   className="px-8 py-4 bg-red-600 hover:bg-red-700 text-white font-medium uppercase tracking-wide transition-all duration-200 hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-3"
                 >
                   {isGenerating ? (

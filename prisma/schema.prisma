@@ -1,0 +1,39 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+/// Primary dictionary: seeded from legacy JSON + elite list. `lexicon` splits “main” vs “elite”.
+model DictionaryEntry {
+  id               Int      @id
+  term             String
+  definition       String?
+  example          String?
+  tone             String?
+  category         String?
+  sophistication   String?
+  lexicon          String   @default("main")
+  createdAt        DateTime @default(now())
+
+  @@index([lexicon])
+  @@index([term])
+}
+
+/// Curated PDF / portal metadata (not shown in the public UI). Query with Prisma Studio or SQL.
+model ReadingResource {
+  id           Int     @id @default(autoincrement())
+  slug         String  @unique
+  bucket       String
+  title        String
+  description  String
+  url          String
+  kind         String
+  licenseNote  String
+  visible      Boolean @default(false)
+
+  @@index([bucket])
+}

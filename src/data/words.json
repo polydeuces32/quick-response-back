@@ -1,0 +1,83 @@
+[
+  {
+    "id": 1,
+    "term": "SAGACIOUS",
+    "definition": "Having or showing keen mental discernment",
+    "example": "Your sagacious advice is invaluable",
+    "tone": "professional",
+    "createdAt": "2025-09-26T01:06:05.559Z"
+  },
+  {
+    "id": 2,
+    "term": "PERSPICACIOUS",
+    "definition": "Having a ready insight into and understanding of things",
+    "example": "A perspicacious analysis of the situation",
+    "tone": "academic",
+    "createdAt": "2025-09-26T01:06:05.559Z"
+  },
+  {
+    "id": 3,
+    "term": "SARDONIC",
+    "definition": "Grimly mocking or cynical",
+    "example": "His sardonic wit was both amusing and cutting",
+    "tone": "witty",
+    "createdAt": "2025-09-26T01:06:05.559Z"
+  },
+  {
+    "id": 4,
+    "term": "MORDANT",
+    "definition": "Bitingly sarcastic",
+    "example": "Her mordant commentary on politics was spot-on",
+    "tone": "devilish",
+    "createdAt": "2025-09-26T01:06:05.559Z"
+  },
+  {
+    "id": 5,
+    "term": "ACUMEN",
+    "definition": "The ability to make good judgments and quick decisions",
+    "example": "His business acumen led to great success",
+    "tone": "professional",
+    "createdAt": "2025-09-26T01:06:05.559Z"
+  },
+  {
+    "id": 6,
+    "term": "ERUDITE",
+    "definition": "Having or showing great knowledge or learning",
+    "example": "An erudite scholar with vast knowledge",
+    "tone": "academic",
+    "createdAt": "2025-09-26T01:06:05.559Z"
+  },
+  {
+    "id": 7,
+    "term": "FACETIOUS",
+    "definition": "Treating serious issues with deliberately inappropriate humor",
+    "example": "His facetious remarks lightened the mood",
+    "tone": "witty",
+    "createdAt": "2025-09-26T01:06:05.559Z"
+  },
+  {
+    "id": 8,
+    "term": "VITRIOLIC",
+    "definition": "Filled with bitter criticism or malice",
+    "example": "His vitriolic attack on the proposal was harsh",
+    "tone": "devilish",
+    "createdAt": "2025-09-26T01:06:05.559Z"
+  },
+  {
+    "id": 9,
+    "term": "ASTUTE",
+    "definition": "Having or showing an ability to accurately assess situations",
+    "example": "An astute observation about market trends",
+    "tone": "professional",
+    "createdAt": "2025-09-26T01:06:05.559Z"
+  },
+  {
+    "id": 10,
+    "term": "PEDANTIC",
+    "definition": "Overly concerned with minor details or rules",
+    "example": "His pedantic approach to grammar was tiresome",
+    "tone": "academic",
+    "createdAt": "2025-09-26T01:06:05.559Z"
+  }
+]
+

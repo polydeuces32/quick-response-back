@@ -3,7 +3,8 @@
 import { useState } from 'react';
 import words from '@/data/words.json';
 import { eliteWordToWord } from '@/data/elite-words';
-import { SuggestedResponse } from '@/types/word';
+import { buildBasicResponses } from '@/lib/respond-to-message';
+import { SuggestedResponse, Word } from '@/types/word';
 import { Copy, Heart, RefreshCw, Sparkles, Brain } from 'lucide-react';
 import WordCard from '@/components/WordCard';
 import EliteResponseGenerator from '@/components/EliteResponseGenerator';
@@ -19,33 +20,12 @@ export default function Search() {
 
     setIsGenerating(true);
     
-    // Simulate AI-like response generation
     setTimeout(() => {
-      const randomWords = [
-        { ...words[Math.floor(Math.random() * words.length)], createdAt: new Date() },
-        { ...words[Math.floor(Math.random() * words.length)], createdAt: new Date() },
-        { ...words[Math.floor(Math.random() * words.length)], createdAt: new Date() },
-      ];
-
-      const responses: SuggestedResponse[] = [
-        {
-          type: 'plain',
-          text: `I understand your message. Let me think about this carefully.`,
-          word: randomWords[0],
-        },
-        {
-          type: 'witty',
-          text: `Your message is quite ${randomWords[1].term.toLowerCase()}, but I appreciate the ${randomWords[1].definition?.toLowerCase() || 'perspective'}.`,
-          word: randomWords[1],
-        },
-        {
-          type: 'devilish',
-          text: `Ah, how ${randomWords[2].term.toLowerCase()} of you to say that. Your ${randomWords[2].definition?.toLowerCase() || 'approach'} is noted.`,
-          word: randomWords[2],
-        },
-      ];
-
-      setSuggestedResponses(responses);
+      const pool = (words as unknown as Word[]).map((w) => ({
+        ...w,
+        createdAt: w.createdAt instanceof Date ? w.createdAt : new Date(String(w.createdAt)),
+      }));
+      setSuggestedResponses(buildBasicResponses(inputMessage, pool));
       setIsGenerating(false);
     }, 1500);
   };
@@ -93,7 +73,7 @@ export default function Search() {
             RESPONSE GENERATOR
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">
-            Paste any message and get witty, professional, or devilish responses
+            Paste a message—replies quote your text, adapt to simple cues (thanks / question / apology / complaint), and weave in vocabulary.
           </p>
           
           {/* Mode Toggle */}

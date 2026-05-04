@@ -1,5 +1,6 @@
 import { PrismaClient } from '@prisma/client';
 import words from '../src/data/words.json';
+import harvardWords from '../src/data/harvard-words.json';
 import { academicPdfSources } from '../src/data/academic-pdf-sources';
 import { vocabularyPdfSources } from '../src/data/vocabulary-pdf-sources';
 
@@ -25,6 +26,21 @@ async function main() {
         sophistication: null,
         lexicon: 'main',
         createdAt: new Date(w.createdAt),
+      },
+    });
+  }
+
+  for (const w of harvardWords) {
+    await prisma.dictionaryEntry.create({
+      data: {
+        id: w.id,
+        term: w.term,
+        definition: w.definition,
+        example: w.example,
+        tone: w.tone,
+        category: w.category,
+        sophistication: w.sophistication,
+        lexicon: 'elite',
       },
     });
   }
@@ -60,8 +76,9 @@ async function main() {
   }
 
   const mainCount = await prisma.dictionaryEntry.count({ where: { lexicon: 'main' } });
+  const eliteCount = await prisma.dictionaryEntry.count({ where: { lexicon: 'elite' } });
   const readingCount = await prisma.readingResource.count();
-  console.log(`Seeded ${mainCount} dictionary words, ${readingCount} reading resources (hidden in DB, not on site).`);
+  console.log(`Seeded ${mainCount} main + ${eliteCount} elite dictionary words (${mainCount + eliteCount} total), ${readingCount} reading resources.`);
 }
 
 main()

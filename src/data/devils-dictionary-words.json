@@ -1,0 +1,992 @@
+[
+  {
+    "id": 351,
+    "term": "ABASEMENT",
+    "definition": "A decent and customary mental attitude in the presence of wealth or power.",
+    "example": "He greeted the board with appropriate abasement—which is to say, he smiled until it hurt.",
+    "tone": "devilish",
+    "category": "character",
+    "sophistication": "elite"
+  },
+  {
+    "id": 352,
+    "term": "ABSURDITY",
+    "definition": "A statement or belief manifestly inconsistent with one's own opinion.",
+    "example": "Your proposal is an absurdity; mine is a bold vision.",
+    "tone": "sarcastic",
+    "category": "rhetoric",
+    "sophistication": "high"
+  },
+  {
+    "id": 353,
+    "term": "ACHIEVEMENT",
+    "definition": "The death of endeavor and the birth of disgust.",
+    "example": "Every great achievement carries within it the seed of its own ennui.",
+    "tone": "devilish",
+    "category": "character",
+    "sophistication": "elite"
+  },
+  {
+    "id": 354,
+    "term": "ACQUAINTANCE",
+    "definition": "A person whom we know well enough to borrow from, but not well enough to lend to.",
+    "example": "He was a dear acquaintance—close enough to ask favors, too distant to refuse them.",
+    "tone": "witty",
+    "category": "society",
+    "sophistication": "high"
+  },
+  {
+    "id": 355,
+    "term": "ADMIRATION",
+    "definition": "Our polite recognition of another's resemblance to ourselves.",
+    "example": "She admired his taste tremendously—it was, after all, identical to her own.",
+    "tone": "sarcastic",
+    "category": "character",
+    "sophistication": "high"
+  },
+  {
+    "id": 356,
+    "term": "ALLIANCE",
+    "definition": "The union of two thieves who have their hands so deeply inserted in each other's pockets that they cannot separately plunder a third.",
+    "example": "Their strategic alliance was celebrated with champagne and mutual suspicion.",
+    "tone": "devilish",
+    "category": "politics",
+    "sophistication": "elite"
+  },
+  {
+    "id": 357,
+    "term": "ALONE",
+    "definition": "In bad company.",
+    "example": "He preferred to be alone—the only company he reliably found intolerable.",
+    "tone": "witty",
+    "category": "character",
+    "sophistication": "high"
+  },
+  {
+    "id": 358,
+    "term": "AMBITION",
+    "definition": "An overmastering desire to be vilified by enemies while living and made ridiculous by friends when dead.",
+    "example": "His ambition was boundless, which is another way of saying his self-awareness was not.",
+    "tone": "devilish",
+    "category": "character",
+    "sophistication": "elite"
+  },
+  {
+    "id": 359,
+    "term": "APOLOGIZE",
+    "definition": "To lay the foundation for a future offence.",
+    "example": "He apologized with great sincerity, which is to say he was already planning the sequel.",
+    "tone": "devilish",
+    "category": "rhetoric",
+    "sophistication": "high"
+  },
+  {
+    "id": 360,
+    "term": "APPLAUSE",
+    "definition": "The echo of a platitude.",
+    "example": "The speech received thunderous applause, which told you everything about the speech.",
+    "tone": "sarcastic",
+    "category": "rhetoric",
+    "sophistication": "high"
+  },
+  {
+    "id": 361,
+    "term": "BEAUTY",
+    "definition": "The power by which a woman charms a lover and terrifies a husband.",
+    "example": "Beauty is an asset that appreciates poorly and is taxed heavily by time.",
+    "tone": "devilish",
+    "category": "society",
+    "sophistication": "elite"
+  },
+  {
+    "id": 362,
+    "term": "BORE",
+    "definition": "A person who talks when you wish him to listen.",
+    "example": "He was an accomplished bore—a man who could empty a room with an anecdote.",
+    "tone": "witty",
+    "category": "character",
+    "sophistication": "high"
+  },
+  {
+    "id": 363,
+    "term": "BRAIN",
+    "definition": "An apparatus with which we think that we think.",
+    "example": "The brain is a magnificent instrument for generating the illusion of understanding.",
+    "tone": "devilish",
+    "category": "intellect",
+    "sophistication": "elite"
+  },
+  {
+    "id": 364,
+    "term": "BRIDE",
+    "definition": "A woman with a fine prospect of happiness behind her.",
+    "example": "She made a radiant bride—the future, of course, was another matter entirely.",
+    "tone": "witty",
+    "category": "society",
+    "sophistication": "high"
+  },
+  {
+    "id": 365,
+    "term": "CALAMITY",
+    "definition": "A more than commonly plain and unmistakable reminder that the affairs of this life are not of our own ordering.",
+    "example": "The merger was, in retrospect, a calamity wearing a prospectus.",
+    "tone": "devilish",
+    "category": "society",
+    "sophistication": "elite"
+  },
+  {
+    "id": 366,
+    "term": "CEMETERY",
+    "definition": "An isolation ward for the dead.",
+    "example": "They promoted him to a senior title—a kind of corporate cemetery for inconvenient talent.",
+    "tone": "sarcastic",
+    "category": "society",
+    "sophistication": "high"
+  },
+  {
+    "id": 367,
+    "term": "CHILDHOOD",
+    "definition": "The period of human life intermediate between the idiocy of infancy and the folly of youth—two removes from the sin of manhood.",
+    "example": "He spoke of his childhood with nostalgia, having apparently forgotten most of it.",
+    "tone": "devilish",
+    "category": "character",
+    "sophistication": "elite"
+  },
+  {
+    "id": 368,
+    "term": "COMFORT",
+    "definition": "A state of mind produced by contemplation of a neighbor's uneasiness.",
+    "example": "News of his rival's difficulties produced a warm, charitable comfort in him.",
+    "tone": "devilish",
+    "category": "character",
+    "sophistication": "high"
+  },
+  {
+    "id": 369,
+    "term": "COMPROMISE",
+    "definition": "Such an adjustment of conflicting interests as gives each adversary the satisfaction of thinking he has got what he ought not to have.",
+    "example": "They reached a compromise—each party equally dissatisfied, which is to say it was fair.",
+    "tone": "sarcastic",
+    "category": "politics",
+    "sophistication": "elite"
+  },
+  {
+    "id": 370,
+    "term": "CONSCIENCE",
+    "definition": "The inner voice that warns us somebody may be looking.",
+    "example": "His conscience flared briefly, then was soothed by the absence of witnesses.",
+    "tone": "devilish",
+    "category": "character",
+    "sophistication": "elite"
+  },
+  {
+    "id": 371,
+    "term": "CONSERVATIVE",
+    "definition": "A statesman enamored of existing evils, as distinguished from the Liberal, who wishes to replace them with others.",
+    "example": "He called himself a conservative, meaning he preferred the evils he already knew.",
+    "tone": "devilish",
+    "category": "politics",
+    "sophistication": "elite"
+  },
+  {
+    "id": 372,
+    "term": "CONSULT",
+    "definition": "To seek another's approval of a course already decided on.",
+    "example": "He consulted widely before doing exactly what he had always intended.",
+    "tone": "sarcastic",
+    "category": "politics",
+    "sophistication": "high"
+  },
+  {
+    "id": 373,
+    "term": "CORPORATION",
+    "definition": "An ingenious device for obtaining individual profit without individual responsibility.",
+    "example": "The corporation expressed deep regret through its legal team and paid no further price.",
+    "tone": "devilish",
+    "category": "economics",
+    "sophistication": "elite"
+  },
+  {
+    "id": 374,
+    "term": "COWARD",
+    "definition": "One who in a perilous emergency thinks with his legs.",
+    "example": "He was not a coward so much as a man with an unusually rapid threat assessment.",
+    "tone": "witty",
+    "category": "character",
+    "sophistication": "high"
+  },
+  {
+    "id": 375,
+    "term": "CYNIC",
+    "definition": "A blackguard whose faulty vision sees things as they are, not as they ought to be.",
+    "example": "They called him a cynic; he considered this the most accurate compliment he had received.",
+    "tone": "devilish",
+    "category": "character",
+    "sophistication": "elite"
+  },
+  {
+    "id": 376,
+    "term": "DEBT",
+    "definition": "An ingenious substitute for the chain and whip of the slave-driver.",
+    "example": "The mortgage was generous—only thirty years of voluntary servitude.",
+    "tone": "devilish",
+    "category": "economics",
+    "sophistication": "elite"
+  },
+  {
+    "id": 377,
+    "term": "DIPLOMACY",
+    "definition": "The patriotic art of lying for one's country.",
+    "example": "The diplomat crafted a statement of stunning diplomatic precision—every word technically defensible.",
+    "tone": "devilish",
+    "category": "politics",
+    "sophistication": "elite"
+  },
+  {
+    "id": 378,
+    "term": "DISCUSSION",
+    "definition": "A method of confirming others in their errors.",
+    "example": "After three hours of productive discussion, everyone left more certain they had been right.",
+    "tone": "sarcastic",
+    "category": "rhetoric",
+    "sophistication": "high"
+  },
+  {
+    "id": 379,
+    "term": "EGOTIST",
+    "definition": "A person of low taste, more interested in himself than in me.",
+    "example": "He was, by unanimous consensus of all who knew him, a world-class egotist.",
+    "tone": "witty",
+    "category": "character",
+    "sophistication": "high"
+  },
+  {
+    "id": 380,
+    "term": "ELOQUENCE",
+    "definition": "The art of orally persuading fools that white is the color that it appears to be.",
+    "example": "His eloquence was extraordinary—an ability to make the obvious sound profound.",
+    "tone": "sarcastic",
+    "category": "rhetoric",
+    "sophistication": "elite"
+  },
+  {
+    "id": 381,
+    "term": "FAITH",
+    "definition": "Belief without evidence in what is told by one who speaks without knowledge, of things without parallel.",
+    "example": "He had faith in the projections—a quality that distinguished him from everyone who had read them.",
+    "tone": "devilish",
+    "category": "character",
+    "sophistication": "elite"
+  },
+  {
+    "id": 382,
+    "term": "FAMOUS",
+    "definition": "Conspicuously miserable.",
+    "example": "She achieved everything she had wanted and was, at last, comprehensively famous.",
+    "tone": "devilish",
+    "category": "society",
+    "sophistication": "high"
+  },
+  {
+    "id": 383,
+    "term": "FLATTERER",
+    "definition": "One who tells you better things about yourself than you deserve, thereby telling you nothing that is true.",
+    "example": "He surrounded himself with excellent flatterers—the best that money could suborn.",
+    "tone": "devilish",
+    "category": "character",
+    "sophistication": "elite"
+  },
+  {
+    "id": 384,
+    "term": "FRIENDSHIP",
+    "definition": "A ship big enough to carry two in fair weather, but only one in foul.",
+    "example": "Their friendship survived everything life threw at it, until something actually went wrong.",
+    "tone": "devilish",
+    "category": "society",
+    "sophistication": "high"
+  },
+  {
+    "id": 385,
+    "term": "FUTURE",
+    "definition": "That period of time in which our affairs prosper, our friends are true, and our happiness is assured.",
+    "example": "He invested heavily in the future, which is the only commodity sold exclusively on credit.",
+    "tone": "sarcastic",
+    "category": "philosophy",
+    "sophistication": "elite"
+  },
+  {
+    "id": 386,
+    "term": "GENEALOGY",
+    "definition": "An account of one's descent from an ancestor who did not particularly care to trace his own.",
+    "example": "The genealogy was extensive and flattering—several convenient gaps had been tastefully omitted.",
+    "tone": "witty",
+    "category": "society",
+    "sophistication": "high"
+  },
+  {
+    "id": 387,
+    "term": "GHOST",
+    "definition": "The outward and visible sign of an inward fear.",
+    "example": "Every organization has its ghosts—predecessors whose decisions haunt every meeting.",
+    "tone": "devilish",
+    "category": "philosophy",
+    "sophistication": "high"
+  },
+  {
+    "id": 388,
+    "term": "HAPPINESS",
+    "definition": "An agreeable sensation arising from contemplating the misery of another.",
+    "example": "He experienced a warm flush of happiness upon learning that his nemesis had been audited.",
+    "tone": "devilish",
+    "category": "character",
+    "sophistication": "elite"
+  },
+  {
+    "id": 389,
+    "term": "HISTORY",
+    "definition": "An account, mostly false, of events, mostly unimportant, which are brought about by rulers, mostly knaves, and soldiers, mostly fools.",
+    "example": "History judged him favorably—he had, after all, been the one to commission the history.",
+    "tone": "devilish",
+    "category": "politics",
+    "sophistication": "elite"
+  },
+  {
+    "id": 390,
+    "term": "HOPE",
+    "definition": "Desire and expectation rolled into one.",
+    "example": "He had tremendous hope, which is a polite way of saying he had done no research.",
+    "tone": "sarcastic",
+    "category": "character",
+    "sophistication": "high"
+  },
+  {
+    "id": 391,
+    "term": "HOSPITALITY",
+    "definition": "The virtue which induces us to feed and lodge certain persons who are not in need of food and lodging.",
+    "example": "They showed great hospitality to those who could repay it in kind.",
+    "tone": "sarcastic",
+    "category": "society",
+    "sophistication": "high"
+  },
+  {
+    "id": 392,
+    "term": "HYPOCRITE",
+    "definition": "One who, professing virtues that he does not respect, secures the advantage of seeming to be what he despises.",
+    "example": "He was no hypocrite—he simply had a broad and flexible definition of integrity.",
+    "tone": "devilish",
+    "category": "character",
+    "sophistication": "elite"
+  },
+  {
+    "id": 393,
+    "term": "IGNORANCE",
+    "definition": "The state in which we must believe ourselves to be when confronted with the specious arguments of our opponents.",
+    "example": "He confessed ignorance, which is a sophisticated way of declining to engage.",
+    "tone": "sarcastic",
+    "category": "intellect",
+    "sophistication": "high"
+  },
+  {
+    "id": 394,
+    "term": "IMAGINATION",
+    "definition": "A warehouse of facts, with poet and liar in joint ownership.",
+    "example": "He had a powerful imagination—it was almost impossible to know which parts were true.",
+    "tone": "witty",
+    "category": "intellect",
+    "sophistication": "elite"
+  },
+  {
+    "id": 395,
+    "term": "IMPARTIAL",
+    "definition": "Unable to perceive any promise of personal advantage from espousing either side of a controversy.",
+    "example": "He was famously impartial, having been offered nothing to take a position.",
+    "tone": "devilish",
+    "category": "politics",
+    "sophistication": "elite"
+  },
+  {
+    "id": 396,
+    "term": "IMPUNITY",
+    "definition": "Wealth.",
+    "example": "He repeated the offense with characteristic impunity.",
+    "tone": "devilish",
+    "category": "politics",
+    "sophistication": "high"
+  },
+  {
+    "id": 397,
+    "term": "INCOMPATIBILITY",
+    "definition": "In matrimony, a similarity of tastes—particularly the taste for domination.",
+    "example": "They cited incompatibility, which was accurate: both wanted to be the difficult one.",
+    "tone": "witty",
+    "category": "society",
+    "sophistication": "high"
+  },
+  {
+    "id": 398,
+    "term": "INDUSTRY",
+    "definition": "A virtue which some persons mistake for a substitute for talent.",
+    "example": "He compensated for genius with extraordinary industry—twelve hours a day of the wrong things.",
+    "tone": "sarcastic",
+    "category": "character",
+    "sophistication": "high"
+  },
+  {
+    "id": 399,
+    "term": "JUSTICE",
+    "definition": "A commodity which in a more or less adulterated condition the State sells to the citizen as a reward for his allegiance.",
+    "example": "He sought justice, which required only money, time, and a tolerance for disappointment.",
+    "tone": "devilish",
+    "category": "law",
+    "sophistication": "elite"
+  },
+  {
+    "id": 400,
+    "term": "JURY",
+    "definition": "A group of twelve men who, having lied to the judge about their hearing and prejudices, have failed to fool him.",
+    "example": "The jury deliberated for six hours before reaching the verdict the evidence had telegraphed in thirty minutes.",
+    "tone": "devilish",
+    "category": "law",
+    "sophistication": "elite"
+  },
+  {
+    "id": 401,
+    "term": "LABOR",
+    "definition": "One of the processes by which A acquires property for B.",
+    "example": "He labored tirelessly for the good of the company, which was doing very well.",
+    "tone": "devilish",
+    "category": "economics",
+    "sophistication": "high"
+  },
+  {
+    "id": 402,
+    "term": "LAWFUL",
+    "definition": "Compatible with the will of a judge having jurisdiction.",
+    "example": "The arrangement was entirely lawful; they had been most particular about that.",
+    "tone": "devilish",
+    "category": "law",
+    "sophistication": "high"
+  },
+  {
+    "id": 403,
+    "term": "LAWYER",
+    "definition": "One skilled in circumvention of the law.",
+    "example": "He retained an excellent lawyer, which is to say someone fluent in creative compliance.",
+    "tone": "sarcastic",
+    "category": "law",
+    "sophistication": "high"
+  },
+  {
+    "id": 404,
+    "term": "LIBERTY",
+    "definition": "One of imagination's most precious possessions.",
+    "example": "They spoke movingly of liberty—their own, naturally; the concept had limits.",
+    "tone": "devilish",
+    "category": "politics",
+    "sophistication": "elite"
+  },
+  {
+    "id": 405,
+    "term": "LOVE",
+    "definition": "A temporary insanity curable by marriage or by removal of the patient from the influences under which he incurred the disorder.",
+    "example": "He was cured of love within six months, which was considered a speedy recovery.",
+    "tone": "devilish",
+    "category": "society",
+    "sophistication": "elite"
+  },
+  {
+    "id": 406,
+    "term": "MARRIAGE",
+    "definition": "The state or condition of a community consisting of a master, a mistress, and two slaves, making in all, two.",
+    "example": "They entered marriage with high hopes and realistic expectations of moderate disappointment.",
+    "tone": "devilish",
+    "category": "society",
+    "sophistication": "elite"
+  },
+  {
+    "id": 407,
+    "term": "MERCY",
+    "definition": "An attribute beloved of detected offenders.",
+    "example": "He appealed eloquently for mercy, having been caught doing the thing he denied.",
+    "tone": "sarcastic",
+    "category": "law",
+    "sophistication": "high"
+  },
+  {
+    "id": 408,
+    "term": "MODESTY",
+    "definition": "The art of enhancing your charm by pretending not to be aware of it.",
+    "example": "Her modesty was exquisite—a virtue so practiced it had become indistinguishable from performance.",
+    "tone": "witty",
+    "category": "character",
+    "sophistication": "elite"
+  },
+  {
+    "id": 409,
+    "term": "MONEY",
+    "definition": "A blessing that is of no advantage to us excepting when we part with it.",
+    "example": "He accumulated money with great discipline and spent it with great regret.",
+    "tone": "sarcastic",
+    "category": "economics",
+    "sophistication": "high"
+  },
+  {
+    "id": 410,
+    "term": "MORAL",
+    "definition": "Conforming to a local and mutable standard of right.",
+    "example": "His conduct was entirely moral, provided one accepted the appropriate geographic and temporal coordinates.",
+    "tone": "devilish",
+    "category": "philosophy",
+    "sophistication": "elite"
+  },
+  {
+    "id": 411,
+    "term": "NEIGHBOR",
+    "definition": "One whom we are commanded to love as ourselves, and who does all he can to make us disobedient.",
+    "example": "His neighbor was a devoted Christian, which is to say he tested the commandments daily.",
+    "tone": "devilish",
+    "category": "society",
+    "sophistication": "high"
+  },
+  {
+    "id": 412,
+    "term": "OPTIMIST",
+    "definition": "A proponent of the doctrine that black is white.",
+    "example": "They hired an optimist to present the quarterly results, which had the desired effect on morale.",
+    "tone": "sarcastic",
+    "category": "character",
+    "sophistication": "high"
+  },
+  {
+    "id": 413,
+    "term": "PATIENCE",
+    "definition": "A minor form of despair, disguised as a virtue.",
+    "example": "She practiced patience with grace—it was, by then, the only option remaining.",
+    "tone": "devilish",
+    "category": "character",
+    "sophistication": "high"
+  },
+  {
+    "id": 414,
+    "term": "PATRIOTISM",
+    "definition": "Combustible rubbish ready to the torch of any one ambitious to illuminate his name.",
+    "example": "He draped his ambition in patriotism, which lent it a respectable smell.",
+    "tone": "devilish",
+    "category": "politics",
+    "sophistication": "elite"
+  },
+  {
+    "id": 415,
+    "term": "PEACE",
+    "definition": "In international affairs, a period of cheating between two periods of fighting.",
+    "example": "The ceasefire was welcome; both sides needed time to regroup and prepare grievances.",
+    "tone": "devilish",
+    "category": "politics",
+    "sophistication": "elite"
+  },
+  {
+    "id": 416,
+    "term": "PERSEVERANCE",
+    "definition": "A lowly virtue whereby mediocrity achieves an inglorious success.",
+    "example": "He succeeded through sheer perseverance—refusing to be deterred by ability.",
+    "tone": "sarcastic",
+    "category": "character",
+    "sophistication": "high"
+  },
+  {
+    "id": 417,
+    "term": "PHILOSOPHY",
+    "definition": "A route of many roads leading from nowhere to nothing.",
+    "example": "He devoted twenty years to philosophy and emerged, at last, magnificently uncertain.",
+    "tone": "devilish",
+    "category": "philosophy",
+    "sophistication": "elite"
+  },
+  {
+    "id": 418,
+    "term": "PHYSICIAN",
+    "definition": "One upon whom we set our hopes when ill and our dogs when well.",
+    "example": "The physician was gifted, which the patient only discovered once he no longer needed one.",
+    "tone": "witty",
+    "category": "society",
+    "sophistication": "high"
+  },
+  {
+    "id": 419,
+    "term": "PLATITUDE",
+    "definition": "The wisdom of a million fools in the diction of a dunce.",
+    "example": "He concluded with a platitude, which was received with the nodding of heads and the vacancy of eyes.",
+    "tone": "sarcastic",
+    "category": "rhetoric",
+    "sophistication": "elite"
+  },
+  {
+    "id": 420,
+    "term": "POLITICIAN",
+    "definition": "An eel in the fundamental mud upon which the superstructure of organized society is reared.",
+    "example": "He was a seasoned politician—fluent in the art of meaning nothing at length.",
+    "tone": "devilish",
+    "category": "politics",
+    "sophistication": "elite"
+  },
+  {
+    "id": 421,
+    "term": "POLITICS",
+    "definition": "A strife of interests masquerading as a contest of principles.",
+    "example": "They kept politics out of the room, which is a way of saying the money talked quietly.",
+    "tone": "devilish",
+    "category": "politics",
+    "sophistication": "elite"
+  },
+  {
+    "id": 422,
+    "term": "PRAY",
+    "definition": "To ask that the laws of the universe be annulled in behalf of a single petitioner confessedly unworthy.",
+    "example": "He prayed for a favorable outcome, outsourcing the problem to a department with no complaints line.",
+    "tone": "devilish",
+    "category": "character",
+    "sophistication": "high"
+  },
+  {
+    "id": 423,
+    "term": "PREJUDICE",
+    "definition": "A vagrant opinion without visible means of support.",
+    "example": "His prejudice was thorough and categorical—he had not let evidence complicate it.",
+    "tone": "devilish",
+    "category": "character",
+    "sophistication": "elite"
+  },
+  {
+    "id": 424,
+    "term": "REASON",
+    "definition": "To weigh probabilities in the scales of desire.",
+    "example": "He reasoned carefully and arrived, inevitably, at the conclusion he had begun with.",
+    "tone": "devilish",
+    "category": "intellect",
+    "sophistication": "elite"
+  },
+  {
+    "id": 425,
+    "term": "RECONSIDER",
+    "definition": "To seek a justification for a decision already made.",
+    "example": "He promised to reconsider—a gesture of theatrical open-mindedness with no operational consequences.",
+    "tone": "sarcastic",
+    "category": "politics",
+    "sophistication": "high"
+  },
+  {
+    "id": 426,
+    "term": "RELIGION",
+    "definition": "A daughter of Hope and Fear, explaining to Ignorance the nature of the Unknowable.",
+    "example": "Religion and certainty share lodgings but are rarely introduced.",
+    "tone": "devilish",
+    "category": "philosophy",
+    "sophistication": "elite"
+  },
+  {
+    "id": 427,
+    "term": "RUMOR",
+    "definition": "A favorite weapon of the assassins of character.",
+    "example": "The rumor spread quickly, assisted by those most loudly denying they had started it.",
+    "tone": "devilish",
+    "category": "society",
+    "sophistication": "high"
+  },
+  {
+    "id": 428,
+    "term": "SAINT",
+    "definition": "A dead sinner revised and edited.",
+    "example": "He achieved sainthood, which required only that his enemies outlive him.",
+    "tone": "devilish",
+    "category": "character",
+    "sophistication": "elite"
+  },
+  {
+    "id": 429,
+    "term": "SATIRE",
+    "definition": "An obsolete kind of literary composition in which the vices and follies of the author's enemies were expounded with imperfect tenderness.",
+    "example": "He called it satire; his subjects called it libel; posterity would call it journalism.",
+    "tone": "sarcastic",
+    "category": "rhetoric",
+    "sophistication": "elite"
+  },
+  {
+    "id": 430,
+    "term": "SELFISH",
+    "definition": "Devoid of consideration for the selfishness of others.",
+    "example": "He was called selfish by people who wanted what he had, which is a different thing.",
+    "tone": "witty",
+    "category": "character",
+    "sophistication": "high"
+  },
+  {
+    "id": 431,
+    "term": "SUCCESS",
+    "definition": "The one unpardonable sin against one's fellows.",
+    "example": "His success was spectacular and, among his peers, profoundly unforgivable.",
+    "tone": "devilish",
+    "category": "character",
+    "sophistication": "elite"
+  },
+  {
+    "id": 432,
+    "term": "SYMPATHY",
+    "definition": "A substitute, usually inadequate, for more substantial expressions of condolence.",
+    "example": "She offered her deepest sympathy, which cost nothing and was priced accordingly.",
+    "tone": "sarcastic",
+    "category": "character",
+    "sophistication": "high"
+  },
+  {
+    "id": 433,
+    "term": "TRIAL",
+    "definition": "A formal inquiry designed to prove and put upon record the blameless characters of judges, advocates, and jurors.",
+    "example": "The trial was conducted with the solemnity appropriate to a foregone conclusion.",
+    "tone": "devilish",
+    "category": "law",
+    "sophistication": "elite"
+  },
+  {
+    "id": 434,
+    "term": "TRUTH",
+    "definition": "An ingenious compound of desirability and appearance.",
+    "example": "He was committed to truth, particularly the kind that reflected well on him.",
+    "tone": "devilish",
+    "category": "philosophy",
+    "sophistication": "elite"
+  },
+  {
+    "id": 435,
+    "term": "VALOR",
+    "definition": "A soldierly compound of vanity, duty, and the gambler's hope.",
+    "example": "He was praised for his valor, a virtue that tends to look better in hindsight than in practice.",
+    "tone": "sarcastic",
+    "category": "character",
+    "sophistication": "high"
+  },
+  {
+    "id": 436,
+    "term": "VANITY",
+    "definition": "The tribute of a fool to the worth of the nearest ass.",
+    "example": "His vanity was so complete that criticism simply reorganized itself into confirmation.",
+    "tone": "devilish",
+    "category": "character",
+    "sophistication": "elite"
+  },
+  {
+    "id": 437,
+    "term": "VOTE",
+    "definition": "The instrument and symbol of a freeman's power to make a fool of himself and a wreck of his country.",
+    "example": "He exercised his vote with the solemnity it deserved and the optimism it did not.",
+    "tone": "devilish",
+    "category": "politics",
+    "sophistication": "elite"
+  },
+  {
+    "id": 438,
+    "term": "WAR",
+    "definition": "A by-product of the arts of peace.",
+    "example": "The war was conducted humanely, which meant both sides agreed on the paperwork.",
+    "tone": "devilish",
+    "category": "politics",
+    "sophistication": "elite"
+  },
+  {
+    "id": 439,
+    "term": "WIT",
+    "definition": "The salt with which the American humorist spoils his intellectual cookery by leaving it out.",
+    "example": "He was known for his wit, most of which existed in his own estimation.",
+    "tone": "sarcastic",
+    "category": "rhetoric",
+    "sophistication": "high"
+  },
+  {
+    "id": 440,
+    "term": "EDUCATION",
+    "definition": "That which discloses to the wise and disguises from the foolish their lack of understanding.",
+    "example": "A fine education gave him the vocabulary to misunderstand things at a higher level.",
+    "tone": "devilish",
+    "category": "intellect",
+    "sophistication": "elite"
+  },
+  {
+    "id": 441,
+    "term": "IDIOT",
+    "definition": "A member of a large and powerful tribe whose influence in human affairs has always been dominant and controlling.",
+    "example": "He was not, technically, an idiot—he simply shared every characteristic feature of the category.",
+    "tone": "devilish",
+    "category": "character",
+    "sophistication": "elite"
+  },
+  {
+    "id": 442,
+    "term": "IMPIETY",
+    "definition": "Your irreverence toward my deity.",
+    "example": "He was charged with impiety, a crime whose definition begins and ends with the accuser.",
+    "tone": "sarcastic",
+    "category": "philosophy",
+    "sophistication": "high"
+  },
+  {
+    "id": 443,
+    "term": "NEPOTISM",
+    "definition": "Appointing your grandmother to office for the good of the party.",
+    "example": "The appointment was meritocratic—they had interviewed all three relatives before deciding.",
+    "tone": "devilish",
+    "category": "politics",
+    "sophistication": "high"
+  },
+  {
+    "id": 444,
+    "term": "OPERA",
+    "definition": "A play representing life in another world, whose inhabitants have no speech but song and no motions but gestures.",
+    "example": "He endured the opera with the suffering of a man who had paid to be there.",
+    "tone": "witty",
+    "category": "society",
+    "sophistication": "high"
+  },
+  {
+    "id": 445,
+    "term": "PLAGIARISM",
+    "definition": "A literary device whereby foolish readers think the worse of a book the better it is written.",
+    "example": "He was accused of plagiarism—a charge that implied he had written something worth stealing.",
+    "tone": "witty",
+    "category": "rhetoric",
+    "sophistication": "elite"
+  },
+  {
+    "id": 446,
+    "term": "SELF-ESTEEM",
+    "definition": "An erroneous appraisement.",
+    "example": "His self-esteem was robust and entirely unsupported by external evidence.",
+    "tone": "sarcastic",
+    "category": "character",
+    "sophistication": "high"
+  },
+  {
+    "id": 447,
+    "term": "SLANG",
+    "definition": "The grunt of the human hog attempting to slip its leash.",
+    "example": "He dismissed her vocabulary as slang—a judgment that revealed more about him than her.",
+    "tone": "sarcastic",
+    "category": "rhetoric",
+    "sophistication": "high"
+  },
+  {
+    "id": 448,
+    "term": "ADMONITION",
+    "definition": "Gentle reproof, as with a meat-axe.",
+    "example": "The manager delivered an admonition so gentle that only the room fell quiet.",
+    "tone": "devilish",
+    "category": "rhetoric",
+    "sophistication": "elite"
+  },
+  {
+    "id": 449,
+    "term": "ADHERENT",
+    "definition": "A follower who has not yet obtained all that he expects to get.",
+    "example": "His loyal adherents remained devoted, and would continue to do so until the inheritance cleared.",
+    "tone": "sarcastic",
+    "category": "politics",
+    "sophistication": "high"
+  },
+  {
+    "id": 450,
+    "term": "CANNIBAL",
+    "definition": "A gastronome of the old school who preserves the simple tastes and adheres to the natural diet of the pre-pork period.",
+    "example": "The committee consumed its weakest member in the manner of any well-run institution.",
+    "tone": "devilish",
+    "category": "society",
+    "sophistication": "elite"
+  },
+  {
+    "id": 451,
+    "term": "CLAIRVOYANT",
+    "definition": "A person who has the power of seeing that which is invisible to her patron—namely, that he is a blockhead.",
+    "example": "She was not clairvoyant so much as observant, which produces identical results.",
+    "tone": "witty",
+    "category": "character",
+    "sophistication": "high"
+  },
+  {
+    "id": 452,
+    "term": "CLERGYMAN",
+    "definition": "A man who undertakes the management of our spiritual affairs as a method of bettering his temporal ones.",
+    "example": "He took Holy Orders with genuine conviction and a shrewd eye for the living attached.",
+    "tone": "devilish",
+    "category": "society",
+    "sophistication": "elite"
+  },
+  {
+    "id": 453,
+    "term": "ECONOMY",
+    "definition": "Purchasing the barrel of whiskey that you do not need for the price of the cow that you cannot afford.",
+    "example": "He practiced economy with great diligence, spending less on things he should not have had.",
+    "tone": "witty",
+    "category": "economics",
+    "sophistication": "high"
+  },
+  {
+    "id": 454,
+    "term": "EMANCIPATION",
+    "definition": "A bondman's change from the tyranny of another to the despotism of himself.",
+    "example": "He celebrated his emancipation from the firm by immediately replicating its worst tendencies alone.",
+    "tone": "devilish",
+    "category": "politics",
+    "sophistication": "elite"
+  },
+  {
+    "id": 455,
+    "term": "FREEDOM",
+    "definition": "Exemption from the stress of authority in a beggarly half-dozen of restraint's infinite multitude of methods.",
+    "example": "He was free in all the ways that did not matter and constrained in all the ways that did.",
+    "tone": "devilish",
+    "category": "politics",
+    "sophistication": "elite"
+  },
+  {
+    "id": 456,
+    "term": "BENEFACTOR",
+    "definition": "One who makes heavy purchases of ingratitude, without materially affecting the price.",
+    "example": "He was a generous benefactor, which is to say the ingratitude he received was world-class.",
+    "tone": "sarcastic",
+    "category": "character",
+    "sophistication": "high"
+  },
+  {
+    "id": 457,
+    "term": "CONTEMPT",
+    "definition": "The feeling of a prudent man for an enemy too formidable safely to be opposed.",
+    "example": "He expressed profound contempt, which was his most sophisticated available response to feeling threatened.",
+    "tone": "devilish",
+    "category": "character",
+    "sophistication": "elite"
+  },
+  {
+    "id": 458,
+    "term": "DISTANCE",
+    "definition": "The only thing that the rich are willing for the poor to call theirs, and keep.",
+    "example": "The new development promised distance from the city—an amenity priced accordingly.",
+    "tone": "devilish",
+    "category": "economics",
+    "sophistication": "high"
+  },
+  {
+    "id": 459,
+    "term": "GENIUS",
+    "definition": "A person who can grasp the relation between things that are otherwise assumed to be unrelated.",
+    "example": "He was called a genius after he was vindicated; before that, he was called difficult.",
+    "tone": "sarcastic",
+    "category": "intellect",
+    "sophistication": "elite"
+  },
+  {
+    "id": 460,
+    "term": "DIVORCE",
+    "definition": "A resumption of diplomatic relations and rectification of boundaries.",
+    "example": "The divorce was amicable, which is the legal term for expensive and exhausting.",
+    "tone": "witty",
+    "category": "society",
+    "sophistication": "high"
+  }
+]

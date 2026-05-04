@@ -1,6 +1,7 @@
 import { PrismaClient } from '@prisma/client';
 import words from '../src/data/words.json';
 import harvardWords from '../src/data/harvard-words.json';
+import devilsWords from '../src/data/devils-dictionary-words.json';
 import { academicPdfSources } from '../src/data/academic-pdf-sources';
 import { vocabularyPdfSources } from '../src/data/vocabulary-pdf-sources';
 
@@ -31,6 +32,21 @@ async function main() {
   }
 
   for (const w of harvardWords) {
+    await prisma.dictionaryEntry.create({
+      data: {
+        id: w.id,
+        term: w.term,
+        definition: w.definition,
+        example: w.example,
+        tone: w.tone,
+        category: w.category,
+        sophistication: w.sophistication,
+        lexicon: 'elite',
+      },
+    });
+  }
+
+  for (const w of devilsWords) {
     await prisma.dictionaryEntry.create({
       data: {
         id: w.id,
@@ -78,7 +94,7 @@ async function main() {
   const mainCount = await prisma.dictionaryEntry.count({ where: { lexicon: 'main' } });
   const eliteCount = await prisma.dictionaryEntry.count({ where: { lexicon: 'elite' } });
   const readingCount = await prisma.readingResource.count();
-  console.log(`Seeded ${mainCount} main + ${eliteCount} elite dictionary words (${mainCount + eliteCount} total), ${readingCount} reading resources.`);
+  console.log(`Seeded ${mainCount} main + ${eliteCount} elite dictionary words (${mainCount + eliteCount} total), ${readingCount} reading resources. Elite includes Harvard words + Devil's Dictionary entries.`);
 }
 
 main()

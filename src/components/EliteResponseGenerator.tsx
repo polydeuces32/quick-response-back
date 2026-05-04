@@ -11,20 +11,49 @@ interface EliteResponseGeneratorProps {
   onSaveResponse?: (response: EliteResponse) => void;
 }
 
+const AI_TONES: Array<EliteResponse['type']> = ['academic', 'witty', 'devilish'];
+
+async function fetchAIResponse(message: string, tone: string): Promise<string> {
+  const res = await fetch('/api/ai-response', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ message, tone }),
+  });
+  if (!res.ok) throw new Error('AI request failed');
+  const data = await res.json() as { text: string };
+  return data.text;
+}
+
 export default function EliteResponseGenerator({ onSaveResponse }: EliteResponseGeneratorProps) {
   const [inputMessage, setInputMessage] = useState('');
   const [suggestedResponses, setSuggestedResponses] = useState<EliteResponse[]>([]);
   const [isGenerating, setIsGenerating] = useState(false);
+  const [aiMode, setAiMode] = useState(false);
 
-  const generateEliteResponses = () => {
+  const generateEliteResponses = async () => {
     if (!inputMessage.trim()) return;
 
     setIsGenerating(true);
-    
-    setTimeout(() => {
+
+    if (aiMode) {
+      try {
+        const [academicText, wittyText, devilishText] = await Promise.all(
+          AI_TONES.map((tone) => fetchAIResponse(inputMessage, tone))
+        );
+        setSuggestedResponses([
+          { type: 'academic', text: academicText, sophistication: 'elite', category: 'academic' },
+          { type: 'witty',    text: wittyText,    sophistication: 'high',  category: 'witty'    },
+          { type: 'devilish', text: devilishText, sophistication: 'elite', category: 'devilish' },
+        ]);
+      } catch {
+        setSuggestedResponses([]);
+      }
+    } else {
+      await new Promise((resolve) => setTimeout(resolve, 2000));
       setSuggestedResponses(buildEliteResponses(inputMessage));
-      setIsGenerating(false);
-    }, 2000);
+    }
+
+    setIsGenerating(false);
   };
 
   const handleCopyResponse = (response: EliteResponse) => {
@@ -72,27 +101,42 @@ export default function EliteResponseGenerator({ onSaveResponse }: EliteResponse
           />
         </div>
         
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between items-center gap-4 flex-wrap">
           <div className="text-sm uppercase tracking-wide text-gray-500 dark:text-gray-400">
             {inputMessage.length} CHARACTERS
           </div>
-          <button
-            onClick={generateEliteResponses}
-            disabled={!inputMessage.trim() || isGenerating}
-            className="px-8 py-4 bg-red-600 hover:bg-red-700 text-white font-medium uppercase tracking-wide transition-all duration-200 hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-3"
-          >
-            {isGenerating ? (
-              <>
-                <RefreshCw className="w-5 h-5 animate-spin" />
-                GENERATING ELITE RESPONSES...
-              </>
-            ) : (
-              <>
-                <Sparkles className="w-5 h-5" />
-                GENERATE ELITE RESPONSES
-              </>
-            )}
-          </button>
+          <div className="flex items-center gap-4">
+            {/* AI Mode toggle */}
+            <button
+              onClick={() => setAiMode((v) => !v)}
+              className={`flex items-center gap-2 px-4 py-2 border-2 font-medium uppercase tracking-wide text-sm transition-colors duration-200 ${
+                aiMode
+                  ? 'border-red-600 bg-red-600 text-white'
+                  : 'border-gray-300 dark:border-gray-600 text-gray-600 dark:text-gray-300 hover:border-red-400'
+              }`}
+              title="Use Claude AI to generate responses instead of templates"
+            >
+              <Sparkles className="w-4 h-4" />
+              AI MODE {aiMode ? 'ON' : 'OFF'}
+            </button>
+            <button
+              onClick={generateEliteResponses}
+              disabled={!inputMessage.trim() || isGenerating}
+              className="px-8 py-4 bg-red-600 hover:bg-red-700 text-white font-medium uppercase tracking-wide transition-all duration-200 hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-3"
+            >
+              {isGenerating ? (
+                <>
+                  <RefreshCw className="w-5 h-5 animate-spin" />
+                  {aiMode ? 'CLAUDE IS WRITING…' : 'GENERATING ELITE RESPONSES...'}
+                </>
+              ) : (
+                <>
+                  <Sparkles className="w-5 h-5" />
+                  GENERATE ELITE RESPONSES
+                </>
+              )}
+            </button>
+          </div>
         </div>
       </div>
 
@@ -100,7 +144,7 @@ export default function EliteResponseGenerator({ onSaveResponse }: EliteResponse
       {suggestedResponses.length > 0 && (
         <div className="space-y-12">
           <h2 className="text-4xl font-bold uppercase tracking-tight text-black dark:text-white text-center mb-12">
-            ELITE RESPONSES
+            {aiMode ? 'AI-GENERATED RESPONSES' : 'ELITE RESPONSES'}
           </h2>
           
           {suggestedResponses.map((response, index) => (

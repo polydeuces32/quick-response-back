@@ -141,7 +141,7 @@ export default function Search() {
               const asSuggested: SuggestedResponse = {
                 type: r.type === 'academic' ? 'plain' : r.type,
                 text: r.text,
-                word: eliteWordToWord(r.word),
+                word: r.word ? eliteWordToWord(r.word) : undefined,
               };
               handleSaveResponse(asSuggested);
             }}
